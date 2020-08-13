@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.chartdemo.activity.MainActivity">
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rect_dark_bottom_round"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:hint="input username"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rect_dark"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="14dp"
+        android:hint="input password"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="12sp" />
+    <EditText
+        android:id="@+id/to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rect_dark"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="14dp"
+        android:hint="input send to"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="12sp" />
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rect_dark_top_round"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="13dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="14dp"
+        android:hint="input content"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rect_dark_right_round"
+            android:text="login"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rect_dark"
+            android:text="logout"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rect_dark_left_round"
+            android:text="send"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_panel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rect_dark_all_round">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/white"/>
+        </HorizontalScrollView>
+    </ScrollView>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/rect_dark_all_round"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:orientation="horizontal">-->
+
+
+
+<!--            <Button-->
+<!--                android:id="@+id/start_speech"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="41dp"-->
+<!--                android:layout_marginTop="21dp"-->
+<!--                android:layout_marginRight="6dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/rect_dark_right_round"-->
+<!--                android:paddingLeft="20dp"-->
+<!--                android:paddingTop="13dp"-->
+<!--                android:paddingRight="13dp"-->
+<!--                android:paddingBottom="14dp"-->
+<!--                android:text="开始讲话"-->
+<!--                android:textColor="@color/white" />\-->
+
+<!--            <Button-->
+<!--                android:id="@+id/stop_speech"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="6dp"-->
+<!--                android:layout_marginTop="21dp"-->
+<!--                android:layout_marginRight="41dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/rect_dark_left_round"-->
+<!--                android:paddingLeft="20dp"-->
+<!--                android:paddingTop="13dp"-->
+<!--                android:paddingRight="13dp"-->
+<!--                android:paddingBottom="14dp"-->
+<!--                android:text="停止讲话"-->
+<!--                android:textColor="@color/white" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>
